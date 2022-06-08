@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <style>
+        .div{
+            background: rgba(0,0,0,0.7);
+            padding: 10px;
+            text-align: center;
+            width: 50%;
+            margin: auto;
+        }
+        .body{
+            background: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-026.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">
+        <p>B K Anirudh</p>
+        <ul type="none">
+            <li>Ph.NO: +91 8688456460</li>
+            <li>Email: anirudhnbua@gmail.com</li>
+            <li>Facebook: Anirudh Karanam</li>
+            <li>D.NO: 4/75,Gerogepet,Ananthapur</li>
+        </ul>
+        <p>Lanka Jaswanth</p>
+        <ul type="none">
+            <li>Ph.NO: +91 8328511159</li>
+            <li>Email: lanka.jaswanth@gmail.com</li>
+            <li>Facebook: Lanka Jaswanth</li>
+            <li>D.NO: 1/11/45 ,Mailavaram, Vijaywada</li>
+        </ul>
+        <p>Sompalli Yeswin</p>
+        <ul type="none">
+            <li>Ph.NO: +91 8431219397</li>
+            <li>Email: yeswin.sompalli@gmail.com</li>
+            <li>Facebook: Yeswin Chowdary</li>
+            <li>D.NO: 2/81/45 ,RB Nagar, Bengaluru</li>
+        </ul>
+    </div>
+    <script>
+        document.getElementById("info").classList.add("div");
+        $("p").css(
+            {
+                textDecoration: "underline" ,
+                fontSize : "30px",
+                fontWeight : "500",
+                color : "White"
+            }
+        );
+        $("li").css({
+            fontSize: "20px",
+            color : "white",
+            fontWeight: "300",
+            color : "white"
+        });
+
+        $("p").on({
+            mouseenter: function(){
+                $(this).css("color","red")
+            },
+            mouseleave: function(){
+                $(this).css("color","white")
+            }
+        });
+
+        $("li").on({
+            mouseenter: function(){
+                $(this).css("color","black")
+            },
+            mouseleave: function(){
+                $(this).css("color","white")
+            }
+        });
+
+        document.body.classList.add("body");
+    </script>
+</body>
+</html>
